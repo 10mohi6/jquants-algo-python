@@ -32,7 +32,7 @@ def algo(scope_module, mocker):
     mocker.patch(
         "jquants_algo.Algo._get_prices_daily_quotes",
         return_value=pd.read_csv(
-            "tests/6273-2023-11-13.csv", index_col=0, parse_dates=True
+            "tests/6273-2023-11-14.csv", index_col=0, parse_dates=True
         ),
     )
     yield scope_module

@@ -107,7 +107,7 @@ class Algo(object):
         long = short = 0.0
         buy = sell = 0.0
         for i in range(len(df)):
-            if df.iat[i, Col.BUY_ENTRY]:
+            if df.iat[i, Col.BUY_ENTRY] and buy == 0.0:
                 buy = df.iat[i, Col.CLOSE] * self.size
             elif df.iat[i, Col.BUY_EXIT] and buy > 0.0:
                 df.iat[i, Col.BUY_PROFIT] = (df.iat[i, Col.CLOSE] * self.size) - buy
@@ -126,7 +126,7 @@ class Algo(object):
                 )
                 long += df.iat[i, Col.BUY_PROFIT]
                 buy = 0.0
-            if df.iat[i, Col.SELL_ENTRY]:
+            if df.iat[i, Col.SELL_ENTRY] and sell == 0.0:
                 sell = df.iat[i, Col.CLOSE] * self.size
             elif df.iat[i, Col.SELL_EXIT] and sell > 0.0:
                 df.iat[i, Col.SELL_PROFIT] = sell - (df.iat[i, Col.CLOSE] * self.size)

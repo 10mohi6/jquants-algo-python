@@ -489,3 +489,4 @@ Date,Close,buy_entry,buy_exit,sell_entry,sell_exit,buy_profit,sell_profit,total_
 2023-08-17,2377.0,False,False,False,False,,,,,,,11450.0,-26420.0,-14970.0
 2023-08-18,2349.0,False,False,False,False,,,,,,,11450.0,-26420.0,-14970.0
 2023-08-21,2356.5,False,False,False,False,,,,,,,11450.0,-26420.0,-14970.0
+2023-08-22,2416.5,True,False,False,True,,-4600.0,-4600.0,,-1.9,-1.9,11450.0,-31020.0,-19570.0

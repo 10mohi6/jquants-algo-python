@@ -54,22 +54,22 @@ pprint.pprint(algo.backtest())
           'sharpe ratio': '0.038',
           'trades': '54.000',
           'win rate': '0.426'},
- 'short': {'average return': '-0.207',
-           'maximum drawdown': '39950.000',
-           'profit': '-26420.000',
-           'profit factor': '0.782',
-           'riskreward ratio': '1.330',
-           'sharpe ratio': '-0.079',
-           'trades': '54.000',
-           'win rate': '0.370'},
- 'total': {'average return': '-0.026',
+ 'short': {'average return': '-0.238',
+           'maximum drawdown': '42050.000',
+           'profit': '-31020.000',
+           'profit factor': '0.754',
+           'riskreward ratio': '1.319',
+           'sharpe ratio': '-0.091',
+           'trades': '55.000',
+           'win rate': '0.364'},
+ 'total': {'average return': '-0.043',
            'maximum drawdown': '79950.000',
-           'profit': '-14970.000',
-           'profit factor': '0.943',
-           'riskreward ratio': '1.426',
-           'sharpe ratio': '-0.008',
-           'trades': '108.000',
-           'win rate': '0.398'}}
+           'profit': '-19570.000',
+           'profit factor': '0.927',
+           'riskreward ratio': '1.423',
+           'sharpe ratio': '-0.013',
+           'trades': '109.000',
+           'win rate': '0.394'}}
 ```
 
 ### predict
@@ -101,12 +101,12 @@ pprint.pprint(algo.predict())
 ```
 
 ```python
-{'buy entry': False,
+{'buy entry': True,
  'buy exit': False,
- 'close': 2356.5,
- 'date': '2023-08-21',
+ 'close': 2416.5,
+ 'date': '2023-08-22',
  'sell entry': False,
- 'sell exit': False}
+ 'sell exit': True}
 ```
 
 ### advanced
